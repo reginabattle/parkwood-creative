@@ -1,0 +1,184 @@
+
+@media only screen and (max-width:1280px) {
+	
+	.container .gutter {
+		padding: 0 35px;
+	}
+
+}
+
+@media only screen and (max-width:890px) {
+	
+	.hero-content p {
+	  font-size: 50px;
+	  line-height: 56px;
+	}
+
+}
+
+
+@media only screen and (max-width:767px) {
+
+	html, body {
+		height: auto;
+	}
+
+	/* Header */
+	
+	.header-wrapper {
+		background: rgba($white, 0.95);
+		position: fixed;
+	  top: 0;
+	  z-index: 100;
+	  bottom: auto;
+		opacity: 1;
+	}
+
+	.logo {
+		opacity: 1;
+		text-align: center;
+	}
+
+	/* Main nav */ 
+
+	/* .menu-btn {
+		display: inline-block;
+		color: $brown;
+		font-size: 28px;
+		position: absolute;
+		top: 28px;
+		right: 15px;
+	} */
+
+	.menu-btn {
+		display: none;
+	}
+
+	.main-nav {
+		position: fixed;
+	  background: $white;
+	  top: 80px;
+	  left: 0;
+	  width: 100% !important;
+	  height: 0%;
+	  opacity: 0;
+	  visibility: hidden;
+	  -webkit-transition: opacity .35s, visibility .35s, height .35s;
+	  transition: opacity .35s, visibility .35s, height .35s;
+	  overflow: hidden;
+	  z-index: 1000;
+
+	}
+
+	.main-nav li {
+	  display: block;
+	  float: none;
+	}
+
+	.main-nav li:last-child a {
+		border-bottom: none;
+	}
+
+	.main-nav a {
+		color: $brown;
+		font-size: 20px;
+		display: block;
+		width: 100%;
+		padding: 15px 15px;
+	}
+	
+	.main-nav.open {
+		opacity: .95;
+	  visibility: visible;
+	  height: 100%;
+	}
+
+	/* Hero */
+
+	.hero-wrapper {
+	  position: relative;
+	  height: auto;
+	  width: 100%;
+	  padding-top: 80px;
+	}
+
+	.hero-content p {
+	  padding: 60px 0;
+	}
+
+	/* Content */
+
+	.container .gutter {
+		padding: 0 15px;
+	}
+
+	.section-wrapper {
+		padding: 50px 0;
+		position: relative;
+	}
+
+	.reel {
+		padding: 0;
+	}
+
+	.play-btn {
+		position: absolute;
+		top: 35%;
+		left: 35%;
+		max-width: 80px;
+	}
+
+	.service {
+		padding: 0;
+		margin-bottom: 20px;
+	}
+
+	.service h2 {
+		display: block;
+	}
+	
+	.social {
+		text-align: left;
+	}
+
+	.footer-logo {
+		position: absolute;
+  	top: 40px;
+  	right: 0;
+	}
+
+	
+
+} /* end 767px */
+
+
+@media only screen and (max-width:580px) {
+	
+	/* Hero */
+
+	.hero-content p {
+	  font-size: 26px;
+	  line-height: 36px;
+	} 
+
+	/* Intro */
+
+	.intro {
+	  font-size: 22px;
+	  line-height: 30px;
+	}
+	
+	.video-container .play {
+    left: 45%;
+  }
+
+	/* Form elements */
+
+	input[type="text"],
+	input[type="email"],
+	input[type="tel"],
+	textarea {
+		width: 100% !important;
+	}
+
+}

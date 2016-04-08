@@ -1,0 +1,51 @@
+
+
+/* Video
+----------------------------------------------------*/
+.reel {
+    position: relative;
+}
+
+.video-container {
+    width: 100%;
+}
+
+.video-container .play {
+    display: block;
+    width: 116px;
+    height: 84px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -43px 0 0 -43px;
+    background: url("../images/layout/play.svg") no-repeat center;
+    z-index: 1002;
+    @include transition-property(all);
+    @include transition-duration(0.5s);
+    @include transition-timing-function(ease-in-out);
+}
+
+.video-container .play.pause {
+    background-image: url("../images/layout/pause.svg");
+    @include transition-property(all);
+    @include transition-duration(0.5s);
+    @include transition-timing-function(ease-in-out);
+}
+
+.video-container .play.pause.hidden {
+    opacity: 0;
+}
+
+.video-container .play:after {
+    display: none;
+}
+
+.video-container video {
+    width: 100%;
+    display: block;
+}
+
+video::-webkit-media-controls {
+    display: none !important;
+}
+
